@@ -13,7 +13,7 @@ public class Triangle {
             this.sideC = sides[2];
         } else {
             throw new IllegalAccessException("wrong arguments to create triangle with sides " +
-                    + sides[0] + " " + sides[1] + " " + sides[2]);
+                     sides[0] + " " + sides[1] + " " + sides[2]);
         }
     }
     public Triangle(int sideA, int sideB, int sideC) throws IllegalAccessException {
@@ -23,7 +23,7 @@ public class Triangle {
             this.sideC = sideC;
         } else {
             throw new IllegalAccessException("wrong arguments to create triangle with sides " +
-                    +sideA + " " + sideB + " " + sideC);
+                    sideA + " " + sideB + " " + sideC);
         }
     }
     private boolean areValidArguments(int sideA,int sideB,int sideC){
@@ -31,5 +31,17 @@ public class Triangle {
         }
     private boolean areValidArguments(int[] sides){
         return sides[0] > 0 && sides[1] > 0 && sides[2] > 0 && sides[0] + sides[1] > sides[2] && sides[2] + sides[1] > sides[0] && sides[0] + sides[2] > sides[1];
+    }
+
+    public int getSideA() {
+        return sideA;
+    }
+
+    public int getSideB() {
+        return sideB;
+    }
+
+    public int getSideC() {
+        return sideC;
     }
 }

@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws IllegalAccessException {
         Triangle triangle = new Triangle(inputSidesOfTriangle());
+        System.out.print(triangle.getSideA());
     }
     public static int[] inputSidesOfTriangle(){
         int sideA = input("Введите сторону A");
